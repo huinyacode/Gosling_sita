@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <title>Database</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo_title">
+            <p>Ryan Gosling</p>
+        </div>
+        <div class="logo_links">
+            <a class="link" href="kuda">Nudes </a>
+            <a class="link" href="index">Home </a>
+            <a class="link" href>Films <p style="font-size: 10px;">(not working now)</p></a>
+        </div>
+    </header>
+    <div class="hero" style="gap:30px;">
+        <div class="info" >
+            <div class="info_title">
+                <p>On this Page you can see <br> Results of other Gosling's bithes</p>
+            </div> 
+        </div>
+        <div class="pic" style="margin-right: 40px;">
+            <img class="image" src="images/golsing/list.jpg">
+        </div>
+    </div>
+    <div class="people_results">
+        <p class="facts_main_text">Gosling's Bitches</p>
+        <table class="res">
+            <tr class="lines">
+                <td class="id_user">Your ID</td>
+                <td class="name_user">Your name</td>
+                <td class="type_gosl">Gosling type</td>
+                <td class="time_create">Date</td>
+            </tr>
+
+            % for name, type, id , date in goslings[::-1]:
+            
+            <tr class="lines">
+                <td class="id_user">
+                    {{id}}.
+                </td>
+                <td class="name_user">
+                    {{name}}
+                </td>
+                <td class="type_gosl">
+                    {{type}}
+                </td>
+                <td class="time_create">
+                    {{date}}
+                </td>
+            </tr>
+            % end
+            
+        </table>
+    </div>
+    <footer class="footer">
+        <p style="font-size: 25px;">Copyright @ HuinyaCode 2023</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,384 @@
+@import url("./font.css");
+
+* {
+    margin:0;
+    
+}
+button,
+button:active,
+button:focus  {
+  border:2px solid #080a0e;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* styles for headler */
+
+.header {
+    display: flex;
+    background-color: #1f2937;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #f9faf8;
+    padding-top:10px;
+    margin-left:20px;
+    
+}
+
+.logo_links {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-around;
+    gap: 10px;
+    padding-top:10px;
+    margin-right: 40px;
+}
+
+.link {
+    cursor: pointer;
+}
+.link a {
+    color:#e5e7eb;
+}
+a:visited {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+a:active {
+    color: green
+}
+
+/* styles for hero*/
+
+.hero {
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+    background-color:#1f2937;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 30px;
+}
+
+.info {
+    flex: 0 1 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info_title {
+    padding:20px;
+    font-size: calc(12px + 3vw);
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.info_text {
+    padding: 20px;
+    font-size: calc(5px + 1vw);
+    color:#e5e7eb;
+
+}
+
+.button_sign_up {
+    background-color: #3882f6;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 30px 20px;
+    font-weight: bold;
+    max-width: fit-content;
+    cursor: pointer;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0 1 350px;
+    min-width: 40%;
+    min-height: 90vh;
+}
+
+.image {
+    border-radius: 10px;
+    max-height: 90vh;
+    max-width: 100% ;
+}
+
+/* place for facts */
+.randomfact {
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left:40px;
+}
+
+.facts_main_text {
+    text-align: center;
+    font-size:36px;
+    font-weight: 800;
+    color: #1f2937
+    
+}
+
+.facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:40px;
+    align-items: center;
+    margin: 40px;
+    flex-wrap: wrap;
+    
+}
+
+.fact {
+    flex: 0 1 300px;
+    font-size:18px;
+}
+.fact img {
+    border-radius: 10px;
+    width: 100%;
+    border: 3px solid #3882f6;
+}
+
+/* Here will be quote*/
+
+.quotes {
+    background-color: #e5e7eb;
+    padding:20px;
+}
+.flex_quote {
+
+    margin: 40px 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.quote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+}
+.anot {
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* this part for test */
+
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.flex-test {
+    padding:100px;
+    display: flex;
+    flex: 1 1 400px;
+    justify-content: center;
+
+}
+.some {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+    background-color: #3882f6;
+    padding:40px 100px;
+    border-radius:10px;
+    color: #fff;
+}
+.text-test {
+    font-size: 18px;
+    
+}
+.test_button {
+    max-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 30px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #3882f6;
+    font-weight: 600;  
+    border-radius: 5px;
+    border: 2px solid #fff;
+    padding: 5px 15px;
+}
+.some a {
+    text-decoration: none;
+}
+.some a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+.some a:active {
+    text-decoration: none;
+    color: green;
+}
+
+/* part for form*/
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 60px ;
+    gap: 10px;
+}
+.form form {
+    display: flex;
+    font-size: 18px;
+    color:#fff;
+    background-color: #1f2937;
+    padding: 40px;
+    border-radius: 10px;
+    flex: 0 1 600px;
+    gap:60px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+}
+.enter_data {
+    flex-direction: column;
+    display: flex;
+    gap:15px;
+}
+
+.name {
+    margin: 15px 0;
+    font-size: 23px;
+}
+.gosl {
+    font-size: 20px;
+}
+.entry {
+    color:#e5e7eb;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #263244;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.choice_gosl {
+    padding: 15px;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+}
+.send_button {
+    
+    font-size: 18px;
+    flex: 1 0 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #263244;
+    color:#fff;
+    border: 2px solid #e5e7eb;
+    cursor: pointer;
+
+}
+/* this footer */
+
+.footer {
+    color: #f9faf8;
+    padding: 40px;
+    background-color: #1f2937;
+    text-align: center;
+    bottom: 0;
+}
+
+.button_sign_up a {
+text-decoration: none;
+cursor: pointer;
+}
+a {
+    color:#e5e7eb;
+}
+a:visited {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+a:active {
+    color: green
+}
+.hero a {
+    text-decoration: none;
+    border: 2px solid #e5e7eb;
+}
+.arrow {
+    margin-right: 70%;
+    flex-direction: column;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding-bottom:5%;
+    
+}
+
+/* this part about data file*/
+
+.people_results {
+    
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.res {
+    display: flex;
+    border: 2px solid #1f2937;
+    border-radius: 10px;
+    flex: 1 0 60%;
+    margin: 0 25%;  
+    justify-content: center;
+
+    
+    background-color: #263244;
+
+}
+
+
+
+
+.lines {
+    border-bottom: 1px solid #16181b;
+    text-align: center;
+    color:#e5e7eb;
+    font-size: 18px;
+    margin: 0 30px;
+    padding: 30px 0;
+
+}
+.lines > * {
+    width: 100px;
+    height: 35px;
+    margin-right: 40px;
+}
+
+.id_user {
+    padding: 0 15px;
+}
